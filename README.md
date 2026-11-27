@@ -19,7 +19,7 @@ I build applied AI systems that connect large language models to real business d
 
 | Project | What it does | Stack |
 |---|---|---|
-| [**docs-rag-evals**](https://github.com/ChauHuynh17071994/docs-rag-evals) | Q&A over company documents with validated citations, refusals and an eval suite (recall@k, MRR, citation validity) gated in CI | Python · Claude API · BM25 · FastAPI |
+| [**docs-rag-evals**](https://github.com/ChauHuynh17071994/docs-rag-evals) | Q&A over company documents with validated citations and refusals. Hybrid retrieval + reranking + query rewriting reach recall@1 = 1.000 on a 33-question eval set; faithfulness judge, Docker, JSON logs with cost tracking, CI quality gate | Python · Claude API · BM25 · embeddings · FastAPI · Docker |
 | [**nl-to-sql-app**](https://github.com/ChauHuynh17071994/nl-to-sql-app) | Ask business questions in plain language → validated, read-only SQL over an enterprise PostgreSQL schema, with eval tests | TypeScript · Claude API · PostgreSQL · Docker |
 | [**Autonomous-decision-agent**](https://github.com/ChauHuynh17071994/Autonomous-decision-agent) | Agent loop with structured decision outputs, layered guardrails, risk controls, and an eval/backtesting pipeline | TypeScript · LLM · Evals |
 | [**ERP-AI-Assistant**](https://github.com/ChauHuynh17071994/ERP-AI-Assistant) | Ask your ERP data anything in plain English: purchase orders, inventory, supplier performance | Python · LLM |
