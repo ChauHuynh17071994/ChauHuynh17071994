@@ -13,13 +13,14 @@ I build applied AI systems that connect large language models to real business d
 - **LLM applications**: NL-to-SQL, RAG, structured outputs, tool use
 - **AI agents**: decision loops, rule-based guardrails, risk controls, live API execution
 - **Evaluation**: regression tests for prompts, backtesting, quality metrics
-- **Enterprise + AI**: putting LLMs on top of ERP systems (IFS) and business data
+- **Enterprise + AI**: putting LLMs on top of ERP systems (IFS) and business data, via MCP servers with guardrails
 
 ### 🚀 Featured projects
 
 | Project | What it does | Stack |
 |---|---|---|
 | [**docs-rag-evals**](https://github.com/ChauHuynh17071994/docs-rag-evals) | Q&A over company documents with validated citations and refusals. Hybrid retrieval + reranking + query rewriting reach recall@1 = 1.000 on a 33-question eval set; faithfulness judge, Docker, JSON logs with cost tracking, CI quality gate | Python · Claude API · BM25 · embeddings · FastAPI · Docker |
+| [**ifs-erp-mcp-server**](https://github.com/ChauHuynh17071994/ifs-erp-mcp-server) | MCP server that lets Claude answer ERP questions (orders, inventory, overdue POs, supplier on-time rate) over IFS-shaped demo data. Read-only by construction, pydantic validation, column allowlist, PII masking, JSONL audit log; 79 tests incl. a real MCP client session | Python · MCP · SQLite · pydantic |
 | [**nl-to-sql-app**](https://github.com/ChauHuynh17071994/nl-to-sql-app) | Ask business questions in plain language → validated, read-only SQL over an enterprise PostgreSQL schema, with eval tests | TypeScript · Claude API · PostgreSQL · Docker |
 | [**Autonomous-decision-agent**](https://github.com/ChauHuynh17071994/Autonomous-decision-agent) | Agent loop with structured decision outputs, layered guardrails, risk controls, and an eval/backtesting pipeline | TypeScript · LLM · Evals |
 | [**ERP-AI-Assistant**](https://github.com/ChauHuynh17071994/ERP-AI-Assistant) | Ask your ERP data anything in plain English: purchase orders, inventory, supplier performance | Python · LLM |
